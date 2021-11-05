@@ -1,0 +1,197 @@
+/*******************************************
+    PAGE LAYOUT
+********************************************/
+body {
+    height: 100%;
+    padding: 5px 10px 0;
+    box-sizing: border-box;
+}
+html {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/mainbg.jpg);
+}
+
+
+
+
+/*******************************************
+    MAIN HEADER
+********************************************/
+section h1 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+}
+
+
+
+/*******************************************
+    LOGIN DASHBOARD
+********************************************/
+
+/* MAIN CONTAINER */
+body section div.main {
+    width: 70%;
+    opacity: 0.7;
+    height: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 60px auto 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #ddd;
+    box-shadow: 0px 10px 20px -10px;
+}
+
+/* AVATAR */
+div.login img {
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+}
+body section div.main div.login {
+    top: -35px; 
+    width: 80px;
+    height:80px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(192, 152, 65);
+}
+
+
+/* TEXT AREAS */
+
+.main input:hover {
+    padding: 2px 1px 2px 5px;
+    border: 2px solid rgb(92, 88, 88);
+}
+div.main input.detl {
+    width: 90%;
+    height: 30px;
+    display: block;
+    padding-left: 15px;
+    border-radius: 30px;
+    margin: 15px auto 5px;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(116, 112, 105);
+    border: 1px solid rgb(109, 102, 100);
+}
+section div.main input.detl.butinp {
+    margin-bottom: 5px;
+}
+
+div.main div.reg_in {
+    display: inline-flex;
+    width: 100%;
+}
+
+div.main div.reg_in a.input{
+    margin-left: auto;
+} 
+
+
+/* REGISTRATION LINK */
+.main div.reg_in a.reg:hover {
+    color: blue;
+}
+div.main div.reg_in a.reg {
+    padding:0;
+    margin: auto 0;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+
+
+/* LOGIN-BUTTON */
+section div.main div.reg_in a.input {
+    text-decoration: none;
+}
+section div.main div.reg a.input input:hover {
+    transition-duration: 1s;
+    transition-property: background;
+    background-color: rgb(110, 139, 202);
+}
+section div.main div.reg_in a.input input {
+    width: 60px;
+    height: 25px;
+    margin: 0;
+    opacity: 0.8;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px;
+    font-family: 'Righteous', cursive;
+}
+
+
+
+/* FOOTER */
+body footer {
+    margin-top: 150px;
+    text-align: center;
+}
+
+
+/*******************************************
+    MEDIA QUERIES
+********************************************/
+/* TABLET */
+@media screen and (min-width: 480px){
+    body section div.main {
+        width: 70%;
+    }
+    div.main div.reg_in {
+        margin-top: 6px;
+    }
+    div.main div.reg_in a {
+        padding-left: 20px;
+    }
+    div.main input.detl {
+       width: 75%;
+       height: 30px;
+    }
+    section a input {
+       width: 20%;
+       height: 30px;
+    }
+    section h1 {
+       font-size: 30px;
+    }
+    body section div.main {
+       width: 50%;
+       height: 220px;
+       margin-top: 150px;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 770px) {
+    div.main input.dtl {
+        width: 75%;
+    }
+    section div.reg_in a.input input {
+        width: 13%;
+        height: 33px;
+    }
+    section h1 {
+        font-size: 30px;
+    }
+    body section div.main {
+        width: 25%;
+        height: 230px;
+        margin-top: 150px;
+    }
+}
+

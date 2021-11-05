@@ -1,0 +1,238 @@
+/*******************************************
+    PAGE LAYOUT
+********************************************/
+body {
+    margin: 0;
+}
+html {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/gradret.jpg);
+}
+
+
+
+/*******************************************
+    NAVIGATION BAR
+********************************************/
+nav ul li.logout {
+    padding: 1px;
+    margin-left: auto;
+}
+section nav ul {
+    margin: 0;
+    flex-wrap: wrap;
+    padding:4px 4px;
+    list-style-type: none;
+    display: -webkit-flex;
+}
+nav ul li.logout a input{
+    width: 55px;
+    height: 25px;
+    font-size: 12px;
+    color:  white;
+    font-weight: bold;
+    border-radius: 30px;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(2, 34, 41);
+}
+nav ul li.logout a input:hover {
+    height: 26px;
+    color: black;
+    transition-duration: 1s;
+    transition-property: background;
+    background-color: rgb(84, 82, 175);
+}
+section nav {
+    width: 100%;
+    opacity: 0.8;
+    top: -45px;
+    position: relative;
+    box-shadow: 0px 10px 20px -10px;
+    background-color: rgb(235, 186, 94);
+}
+nav ul li.header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(11, 148, 11);
+    font-family: 'Righteous', cursive;
+}
+
+
+
+/*******************************************
+    MAIN AREA
+********************************************/
+
+/* PROFILE DASHBOARD */
+section div.profile {
+    flex: 0.5;
+    opacity: 0.8;
+    position: static;
+    margin-left: -100%;
+    background: linear-gradient(  rgb(235, 186, 94), rgb(84, 232, 84));
+}
+
+/* STUDENT IMAGE */
+section div.profile img.stud {
+    opacity: 1;
+    width: 35%;
+    height: 120px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 15px 30px;
+    box-shadow: 0px 10px 20px -10px;
+    animation: stud 2s ease-out forwards;
+    border: 3px solid rgb(232, 168, 51);
+}
+
+/* PROFILE DETAILS */
+section div.profile h1, h2, h3, h4, h5 {
+    font-size: 15px !important;
+    margin-left: -100%;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* DATABASE CONTAINER */
+section div.main {
+    flex: 3;
+}
+
+
+
+/*******************************************
+    ANIMATIONS
+********************************************/
+
+section div.profile h2{
+    animation: class 2s forwards;
+}
+
+section div.profile h4 {
+    animation: class 4s forwards;
+}
+section div.profile h5 {
+    animation: name 5s forwards;
+}
+section div.profile h3 {
+    animation: class 3s forwards;
+}
+section div.profile h1 {
+    animation: name 3s ease-out forwards;
+}
+section nav {
+    animation: navi 2s ease-in-out forwards;
+}
+section div.profile {
+    animation: profile 1s ease-out forwards;
+}
+
+
+
+/*******************************************
+    KEYFRAMES
+********************************************/
+@keyframes navi {
+    100% {
+        top: 0;
+    }
+}
+@keyframes profile {
+    100% { 
+        margin-left: 3px;
+    }
+}
+
+@keyframes age {
+    100% {
+        margin-left: 60px;
+    }
+}
+@keyframes class {
+    100% {
+        margin-left: 5px;
+    }
+}
+@keyframes sex {
+    100% { 
+        margin-left: 60px;
+    }
+}
+@keyframes name {
+    100% { 
+        margin-left: 5px; 
+        transform: rotateY(360deg);
+    }
+}
+@keyframes stud {
+    100% { 
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*******************************************
+    MEDIA QUERIES
+********************************************/
+/* TABLET */
+@media screen and (min-width: 480px) {
+    div.wrap {
+        width: 100%;
+        display: flex;
+        height: 613px;
+    }
+    section div.main {
+        flex: 3;
+    }      
+    section div.profile {
+        flex: 1.5;
+    }
+    section div.profile img.stud {
+        width: 65%;
+        height: 100px;
+        margin-top: 20px;
+    }
+    section div.profile h1, h2, h3, h4, h5 {
+        font-size: 12px;
+    }   
+}
+
+/* LAPTOP */
+@media screen and (min-width: 660px) {
+    section div.main {
+        flex: 3;
+    }
+    nav ul li.logout {
+        padding: 4px;
+    }
+    nav ul li.header {
+        font-size: 1.8em;
+    }
+    section nav ul {
+        padding:4px 10px;
+    }
+    section div.profile {
+        flex: 1;
+    }
+    nav ul li.logout a input{
+        width: 70px;
+        height: 29px;
+        border-radius: 30px;
+    }
+    section div.profile img.stud {
+        width: 50%;
+        height: 160px;
+    }  
+    nav ul li.logout a input:hover {
+        height: 30px;
+    }
+    
+    section div.profile h1, h2, h3, h4, h5 {
+        font-size: 20px;
+    }
+}
