@@ -42,7 +42,7 @@ body section div.main {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
-    margin: 60px auto 0;
+    margin: 90px auto 0;
     border-radius: 20px;
     box-sizing: border-box;
     background-color: #ddd;
@@ -60,12 +60,12 @@ body section div.main div.login {
     top: -35px; 
     width: 80px;
     height:80px;
-    margin: 0 auto;
     position: absolute;
     border-radius: 50%;
     text-align: center;
     background-color: rgb(192, 152, 65);
-    left: 130px;
+    /* left: 50%; */
+    margin-left: 27%;
 }
 
 
@@ -146,7 +146,7 @@ section div.main div.reg_in a.input input {
 
 /* FOOTER */
 body footer {
-    margin-top: 150px;
+    margin-top: 350px;
     text-align: center;
 }
 
@@ -158,6 +158,9 @@ body footer {
 @media screen and (min-width: 480px){
     body section div.main {
         width: 70%;
+    }
+    body section div.main div.login {
+        margin-left: 35%;
     }
     div.main div.reg_in {
         margin-top: 6px;
@@ -184,9 +187,12 @@ body footer {
 }
 
 /* LAPTOP */
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 960px) {
     div.main input.dtl {
         width: 75%;
+    }
+    body section div.main div.login {
+        margin-left: 33%;
     }
     section div.reg_in a.input input {
         width: 13%;
