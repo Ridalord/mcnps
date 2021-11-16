@@ -41,11 +41,13 @@ body section div.main {
     height: 240px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 50px;
     margin: 60px auto 0;
     border-radius: 20px;
     box-sizing: border-box;
     background-color: #ddd;
     box-shadow: 0px 10px 20px -10px;
+    position: relative;
 }
 
 /* AVATAR */
@@ -59,10 +61,11 @@ body section div.main div.login {
     width: 80px;
     height:80px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     text-align: center;
     background-color: rgb(192, 152, 65);
+    left: 130px;
 }
 
 
@@ -78,18 +81,22 @@ div.main input.detl {
     display: block;
     padding-left: 15px;
     border-radius: 30px;
-    margin: 15px auto 5px;
+    margin: 20px auto 5px;
     font-family: 'Righteous', cursive;
     background-color: rgb(116, 112, 105);
     border: 1px solid rgb(109, 102, 100);
 }
+div.main input.detl.top {
+    margin-top: 40px;
+}
 section div.main input.detl.butinp {
-    margin-bottom: 5px;
+    margin-bottom: 5px;  
 }
 
 div.main div.reg_in {
     display: inline-flex;
     width: 100%;
+    padding-top: 23px;
 }
 
 div.main div.reg_in a.input{
