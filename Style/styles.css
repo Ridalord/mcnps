@@ -82,7 +82,7 @@ div.main input.detl {
     border-radius: 30px;
     margin: 20px auto 5px;
     font-family: 'Righteous', cursive;
-    background-color: rgb(116, 112, 105);
+    /* background-color: rgb(116, 112, 105); */
     border: 1px solid rgb(109, 102, 100);
 }
 div.main input.detl.top {
